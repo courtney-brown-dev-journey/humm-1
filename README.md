@@ -2,6 +2,8 @@
 
 ## Final project
 
+humm is a final project that I made with Hareton, Rose, Jad and John in one week for our final project.
+
 humm is a community-oriented living centre, designed to provide vulnerable members of our society not just food and shelter, but a range of building blocks they need to recover from addiction and trauma and feel safe and included in the world.
 
 We see ourselves not as an accommodation facility but as a community, offering residents counselling (individual and group), as well as opportunities to foster their hobbies and talents, and bond with other members of our whānau through communal meals, movie nights, yoga classes and more fun stuff.
@@ -212,75 +214,3 @@ TODO - add api routes
 
 - TODO: db diagram
 
----
-
-## Setup
-
-Run the following commands in your terminal:
-
-```sh
-npm install
-npm run knex migrate:latest
-npm run knex seed:run
-cp .env.example .env
-```
-
-To run in development:
-
-```sh
-npm run dev
-```
-
-To run in production:
-
-```sh
-npm start
-```
-
-## Heroku!!!
-
-### Creating your app
-
-Create your app with `heroku create [name]`
-
-You can check that this was successful by running `heroku apps` to view a list of your apps
-
-### Adding postgres
-
-Add postgresql (hobby dev) to your app at `https://dashboard.heroku.com/apps/[APP NAME HERE]/resources`
-
-Check that pg has been added by running `heroku addons` to ensure the postgresql db is on your app
-
-### Deploying!
-
-I have created several npm scripts that will be useful for deploying your app to heroku easily.
-
-To push your local master branch to your heroku app:
-
-```sh
-npm run h:deploy
-```
-
-Run heroku migrations:
-
-```sh
-npm run h:migrate
-```
-
-Run heroku seeds:
-
-```sh
-npm run h:seed
-```
-
-If ever you need to rollback, you can also:
-
-```sh
-npm run h:rollback
-```
-
-### Ta-Da!
-
-Your app should be deployed!
-
-### Group Info
